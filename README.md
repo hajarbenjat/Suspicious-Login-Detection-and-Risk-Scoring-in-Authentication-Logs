@@ -16,7 +16,6 @@ The goal is to identify potentially malicious or unusual authentication events b
 ## Technologies Used
 - Python
 - Pandas
-- Matplotlib
 
 ## Dataset
 The dataset contains simulated authentication log events with the following fields:
@@ -54,7 +53,6 @@ The project produces an enriched authentication log with:
 - risk classification
 
 ## Sample Output
-
 Example of detected high-risk events:
 
 | username | timestamp           | status  | off_hours | new_country | new_device | impossible_travel | risk_score | risk_level |
@@ -62,3 +60,11 @@ Example of detected high-risk events:
 | carol    | 2026-04-01 15:00:00 | success | False     | True        | False      | True              | 110        | CRITICAL   |
 | david    | 2026-04-01 23:42:00 | fail    | True      | False       | False      | False             | 50         | HIGH       |
 | emma     | 2026-04-01 03:17:00 | fail    | True      | False       | False      | False             | 50         | HIGH       |
+
+
+## How to Run
+1. Clone the repository
+2. Install dependencies:
+   pip install pandas
+3. Run the script:
+   python auth_analysis.py
