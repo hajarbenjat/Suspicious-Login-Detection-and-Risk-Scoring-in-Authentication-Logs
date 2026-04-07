@@ -52,3 +52,13 @@ The project produces an enriched authentication log with:
 - behavioral indicators
 - risk scores
 - risk classification
+
+## Sample Output
+
+Example of detected high-risk events:
+
+| username | timestamp           | status  | off_hours | new_country | new_device | impossible_travel | risk_score | risk_level |
+|----------|---------------------|---------|-----------|-------------|------------|-------------------|------------|------------|
+| carol    | 2026-04-01 15:00:00 | success | False     | True        | False      | True              | 110        | CRITICAL   |
+| david    | 2026-04-01 23:42:00 | fail    | True      | False       | False      | False             | 50         | HIGH       |
+| emma     | 2026-04-01 03:17:00 | fail    | True      | False       | False      | False             | 50         | HIGH       |
