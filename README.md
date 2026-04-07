@@ -1,6 +1,4 @@
-# Suspicious-Login-Detection-and-Risk-Scoring-in-Authentication-Logs
 # Risk-Based Authentication Log Analysis with Python
-
 This project analyzes authentication logs to detect suspicious login activity using rule-based risk scoring.
 
 ## Objective
